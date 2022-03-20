@@ -2,11 +2,15 @@
   "name": "@alekseyleshko/git-diff",
   "version": "0.0.1",
   "description": "Get a git diff as JS object with commit comparison",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "static-checks": "echo static-checks",
+    "build": "yarn tsc",
+    "prepublishOnly": "yarn build",
+    "static-checks": "yarn type-check",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "test:ci": "echo \"Error: no test specified\" && exit 0"
+    "test:ci": "echo \"Error: no test specified\" && exit 0",
+    "type-check": "yarn tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -25,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/AlekseyLeshko/git-diff/issues"
   },
-  "homepage": "https://github.com/AlekseyLeshko/git-diff#readme"
+  "homepage": "https://github.com/AlekseyLeshko/git-diff#readme",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
 }
