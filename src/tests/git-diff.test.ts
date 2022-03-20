@@ -189,6 +189,26 @@ describe('git diff', () => {
         gitDiffCmd: 'git diff main...feature/test-branch-name --numstat',
       },
     ],
+    [
+      'work fine with a shell command as a compare attribute',
+      {
+        comparisons: {
+          from: '$(git merge-base main feature/test-branch-name)',
+          to: 'feature/test-branch-name',
+        },
+        changes: [{
+          insertions: 9,
+          deletions: 0,
+          path: 'x',
+        }],
+        expected: [{
+          insertions: 9,
+          deletions: 0,
+          path: 'x',
+        }],
+        gitDiffCmd: 'git diff $(git merge-base main feature/test-branch-name)...feature/test-branch-name --numstat',
+      },
+    ],
   ])('should %s', (_, { changes, gitDiffCmd, defaultBranchName, comparisons, expected }) => {
     execSync.mockReturnValueOnce(defaultBranchName || 'main');
 
