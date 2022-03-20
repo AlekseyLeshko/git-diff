@@ -1,1 +1,1 @@
-export const getGitDiff = () => {};
+export const getGitDiff = () => ({});
