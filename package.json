@@ -4,7 +4,7 @@
   "description": "Get a git diff as JS object with commit comparison",
   "main": "index.js",
   "scripts": {
-    "static-cheks": "echo static-cheks",
+    "static-checks": "echo static-checks",
     "test": "echo \"Error: no test specified\" && exit 0",
     "test:ci": "echo \"Error: no test specified\" && exit 0"
   },
