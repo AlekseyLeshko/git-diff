@@ -4,10 +4,10 @@ module.exports = {
   modulePathIgnorePatterns: ['dist'],
   coverageThreshold: {
     global: {
-      statements: 93,
-      branches: 81,
-      functions: 89,
-      lines: 92,
+      statements: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100,
     },
   },
 };
