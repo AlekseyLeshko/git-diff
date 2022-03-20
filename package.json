@@ -1,0 +1,27 @@
+{
+  "name": "@alekseyleshko/git-diff",
+  "version": "0.0.1",
+  "description": "Get a git diff as JS object with commit comparison",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekseyLeshko/git-diff.git"
+  },
+  "keywords": [
+    "git",
+    "diff",
+    "changes",
+    "commit",
+    "commits",
+    "comparison"
+  ],
+  "author": "AlekseyLeshko <alekseyleshko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlekseyLeshko/git-diff/issues"
+  },
+  "homepage": "https://github.com/AlekseyLeshko/git-diff#readme"
+}
