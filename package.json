@@ -5,13 +5,13 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "yarn tsc",
-    "prepublishOnly": "yarn build",
-    "static-checks": "yarn type-check",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "static-checks": "npm run type-check",
     "tdd": "npm run test -- --watch",
     "test": "jest --coverage",
-    "test:ci": "echo \"Error: no test specified\" && exit 0",
-    "type-check": "yarn tsc --noEmit"
+    "test:ci": "npm run test",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
