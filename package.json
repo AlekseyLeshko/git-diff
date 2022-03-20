@@ -1,9 +1,12 @@
 {
   "name": "@alekseyleshko/git-diff",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Get a git diff as JS object with commit comparison",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
